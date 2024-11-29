@@ -1,0 +1,977 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+
+/* Button */
+.btn {
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #019aaa;
+}
+
+.herosec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1D1C20;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.herotext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: flex-start;
+  width: 50%; /* Occupy 50% on larger screens */
+  padding: 60px;
+}
+
+.herotext h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.herop {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  max-width: 500px; /* Ensure text doesn't span too wide */
+}
+
+.herobtn {
+  width: 288px;
+  height: 48px;
+  padding: 12px 36px;
+  border-radius: 4px;
+  background: #17B6BA;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.heroimg img {
+  padding: 20px;
+  width: 500px; /* Default width for large screens */
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
+}
+
+
+.firstsec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 60px;
+  text-align: center; /* Center text for smaller screens */
+}
+
+.firstsec h2 {
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60.24px;
+  text-align: center; /* Centered for responsiveness */
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.firstsecp {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px; /* Improved readability */
+  width: 70%; /* Keeps content width consistent */
+  text-align: center;
+}
+
+/* Inner Section */
+.innerfirstsec {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  color: #1D1C20;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.fsbox1, .fsbox2, .fsbox3, .fsbox4 {
+  background: #F2F2F2;
+  text-align: center;
+  padding: 20px;
+  width: 22%; /* Boxes take up 22% of the row */
+  min-width: 200px; /* Ensure a minimum size for smaller screens */
+  border-radius: 8px; /* Add rounded corners for aesthetics */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+
+.secondsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 60px;
+  text-align: center; /* Center align for responsiveness */
+}
+
+.secondsection h2 {
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60.24px;
+  text-align: center; /* Override for responsiveness */
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.secondsectionp {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6rem; /* Improved readability */
+  width: 70%; /* Controlled width for readability */
+  text-align: center;
+  margin: 0 auto; /* Center the paragraph */
+}
+
+/* Inner Section */
+.innersecondsec {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  width: 100%;
+}
+
+.innersecondsec h6 {
+  font-family: Neurial Grotesk, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.innersecondsec p {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  line-height: 1.5rem;
+}
+
+
+.thirdsec {
+  background-color: #1D1C20;
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.thirdsechead {
+  font-family: Bricolage Grotesque, sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thirdsechead h2 {
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 59px;
+  text-align: center;
+}
+
+.thirdsecp {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto; /* Center content */
+}
+
+.innerthirdsec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 5rem;
+}
+
+.thirdsecimg {
+  width: 50%;
+}
+
+.thirdsectext {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.tsinnertext {
+  padding-bottom: 1rem;
+}
+
+.tsinnertext h3 {
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37.76px;
+  text-align: left;
+}
+
+.tsinnertext p {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  text-align: left;
+}
+
+.checkicon {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.checkicon img {
+  width: 1rem;
+}
+
+.fourthsec {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 2rem;
+  padding: 60px;
+}
+
+.fourthsecbtn {
+  width: 288px;
+  height: 48px;
+  padding: 12px 36px;
+  border-radius: 4px;
+  background: #17B6BA;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.fstextgroup1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.fstextgroup1 h2 {
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 59px;
+  text-align: left;
+}
+
+.fstextgroup1 p {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: left;
+}
+
+.fstextgroup2 {
+  display: flex;
+
+  justify-content: center;
+  gap: 2rem;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.fstextgroup2 h5 {
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28.32px;
+  text-align: left;
+}
+
+.fstextgroup2 span {
+  color: red;
+  font-size: 14px;
+}
+
+.group1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event1 {
+  background: #F2F2F2;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+
+.hero {
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./assets/green\ park.jpg') no-repeat center center/cover; /* Background image */
+  /* position: relative; */
+  padding: 0 20px; /* Prevent content from touching the edges */
+  background-size: cover;
+}
+.formcontent{
+    display: flex;
+    gap: 1rem;
+   margin-top: 1rem;
+font-family: Neurial Grotesk;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.formcontent span{
+    color: #62c1cd;
+}
+
+/* Overlay for better readability */
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to enhance text visibility */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Content Layout */
+.hero-content {
+  display: flex;
+  flex-wrap: wrap; /* Make the layout responsive */
+  max-width: 1200px; /* Limit width for larger screens */
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  gap: 30px; /* Gap between text and form */
+}
+
+/* Left Side: Text */
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Right Side: Form */
+.hero-form {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for form */
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.hero-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.hero-form input,
+.hero-form select,
+.hero-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.hero-form select {
+  background-color: #fff;
+}
+
+.hero-form button {
+  background-color:#17B6BA;
+;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero-form button:hover {
+  background-color: #6396cb;
+}
+/* Container for the items */
+.items-container {
+    display: flex;
+    justify-content: space-between; /* Space between each item */
+    align-items: center; /* Align items vertically centered */
+    gap: 1rem; /* Space between each block */
+}
+
+
+
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1d1c20;
+  color: white;
+  flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
+}
+
+.footer-logo img {
+  width: 120px; /* Set logo width */
+  height: auto;
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem; /* Space between links */
+}
+
+.footer-links li {
+  padding: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #17b6ba; /* Hover effect */
+}
+
+.footer-extra-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-extra-link a:hover {
+  color: #17b6ba; /* Hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 508px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-links {
+    margin: 1rem 0;
+    display: none;
+  }
+
+  .btn {
+    margin-top: 0.5rem;
+  }
+}
+/* responsive hero */
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .herosec {
+    flex-direction: column; /* Stack the hero section vertically */
+    text-align: center; /* Center align text and image */
+    padding: 30px;
+  }
+
+  .herotext {
+    width: 100%; /* Full width on smaller screens */
+    padding: 20px;
+    align-items: center; /* Center-align text */
+  }
+
+  .herotext h1 {
+    font-size: 2rem; /* Reduce font size for smaller screens */
+  }
+
+  .herop {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 100%; /* Allow text to span the full width */
+  }
+
+  .herobtn {
+    width: 80%; /* Scale the button width for smaller screens */
+  }
+
+  .heroimg img {
+    width: 80%; /* Scale the image size for smaller screens */
+    padding: 10px;
+  }
+
+  /* responsive first sec */
+   .firstsec {
+    padding: 40px; /* Adjust padding for smaller screens */
+  }
+
+  .firstsec h2 {
+    font-size: 32px; /* Reduce heading size */
+    line-height: 48px;
+  }
+
+  .firstsecp {
+    font-size: 18px; /* Slightly smaller text */
+    width: 90%; /* Allow content to take more space */
+  }
+
+  .innerfirstsec {
+    gap: 1rem; /* Reduce gap between boxes */
+  }
+
+  .fsbox1, .fsbox2, .fsbox3, .fsbox4 {
+    width: 45%; /* Boxes take 45% of the row on tablets */
+  }
+
+  /* responsive second sec */
+  .secondsection {
+    padding: 40px; /* Reduce padding for tablets */
+    gap: 1.5rem;
+  }
+
+  .secondsection h2 {
+    font-size: 32px; /* Reduce heading size */
+    line-height: 48px;
+  }
+
+  .secondsectionp {
+    font-size: 18px; /* Smaller text size */
+    width: 90%; /* Allow more space for smaller screens */
+  }
+
+  .innersecondsec {
+    gap: 1.5rem; /* Reduce gap between items */
+  }
+
+  .innersecondsec h6 {
+    font-size: 18px; /* Reduce font size for subheadings */
+  }
+
+  .innersecondsec p {
+    font-size: 10px; /* Adjust paragraph font size */
+  }
+
+  /* third section */
+  .thirdsec {
+    padding: 40px;
+    gap: 2rem;
+  }
+
+  .thirdsechead h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .thirdsecp {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .innerthirdsec {
+    flex-direction: column; /* Stack elements */
+    gap: 2rem;
+  }
+
+  .thirdsecimg img {
+    width: 100%; /* Full width for image */
+  }
+
+  .thirdsectext {
+    align-items: center; /* Center align text */
+    text-align: center; /* Center align for smaller screens */
+  }
+
+  .tsinnertext h3 {
+    font-size: 28px;
+  }
+
+  .tsinnertext p {
+    font-size: 18px;
+  }
+
+  /* fourth sec */
+  .fourthsec {
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center;
+    gap: 3rem;
+    padding: 40px;
+  }
+
+  .fstextgroup1,
+  .fstextgroup2 {
+    width: 100%; /* Full width for groups */
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fstextgroup1 h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .fstextgroup1 p {
+    font-size: 18px;
+  }
+
+  .fstextgroup2 h5 {
+    font-size: 18px;
+  }
+
+  .fourthsecbtn {
+    width: 100%; /* Full width button */
+    max-width: 300px; /* Limit the maximum width */
+  }
+
+
+  /* form section */
+  .hero-content {
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 10px;
+    gap: 0rem;
+  }
+
+  .hero-text,
+  .hero-form {
+    max-width: 90%; /* Reduce width on smaller screens */
+  }
+
+  .hero-text h1 {
+    font-size: 1rem; /* Scale down text size */
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-form button {
+    font-size: 1rem; /* Adjust button text size */
+  }
+
+  
+
+
+  /* footer */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    width: 100px; /* Smaller logo for smaller screens */
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 10px;
+  }
+
+  .footer-extra-link {
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+/* For very small screens (mobile phones) */
+@media (max-width: 480px) {
+  .herotext h1 {
+    font-size: 1.5rem; /* Further reduce font size */
+  }
+
+  .herop {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+
+  .herobtn {
+    width: 100%; /* Button spans the full width */
+  }
+
+  /* for first section */
+    .firstsec {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .firstsec h2 {
+    font-size: 24px; /* Further reduce heading size */
+    line-height: 36px;
+  }
+
+  .firstsecp {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%; /* Full width for mobile */
+  }
+
+  .innerfirstsec {
+    flex-direction: column; /* Stack boxes vertically */
+    align-items: center; /* Center-align stacked boxes */
+  }
+
+  .fsbox1, .fsbox2, .fsbox3, .fsbox4 {
+    width: 90%; /* Full-width boxes on mobile */
+    padding: 15px;
+  }
+
+  /* second sec */
+   .secondsection {
+    padding: 20px; /* Smaller padding for mobiles */
+    gap: 1rem;
+  }
+
+  .secondsection h2 {
+    font-size: 24px; /* Further reduce heading size */
+    line-height: 36px;
+  }
+
+  .secondsectionp {
+    font-size: 16px;
+    line-height: 1.4rem;
+    width: 100%; /* Full width for mobile */
+  }
+
+  .innersecondsec {
+    flex-direction: column; /* Stack items vertically */
+    gap: 1rem;
+  }
+
+  .innersecondsec h6 {
+    font-size: 16px; /* Smaller subheading */
+  }
+
+  .innersecondsec p {
+    font-size: 10px; /* Smaller paragraph text */
+  }
+
+  /* third screen */
+ 
+  .thirdsec {
+    padding: 20px;
+    gap: 1.5rem;
+  }
+
+  .thirdsechead h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .thirdsecp {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .innerthirdsec {
+    gap: 1.5rem;
+  }
+
+  .thirdsecimg img {
+    width: 100%; /* Ensure image stays responsive */
+  }
+
+  .thirdsectext {
+    gap: 1rem;
+  }
+
+  .tsinnertext h3 {
+    font-size: 20px;
+  }
+
+  .tsinnertext p {
+    font-size: 14px;
+  }
+
+  .checkicon img {
+    width: 0.8rem; /* Smaller icon for mobile */
+  }
+
+  /* fourth */
+   .fourthsec {
+    padding: 20px;
+    gap: 2rem;
+  }
+
+  .fstextgroup1 h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .fstextgroup1 p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .fstextgroup2 h5 {
+    font-size: 16px;
+  }
+
+  .fourthsecbtn {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .event1 {
+    padding: 20px;
+    gap: 1.5rem;
+  }
+  
+  /* fifth sec */
+  .hero {
+    height: auto; /* Allow the height to adjust with content */
+    padding: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem; /* Adjust title size */
+    text-align: center; /* Center-align the text */
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+    text-align: center; /* Center-align the text */
+  }
+
+  .hero-form {
+    padding: 15px;
+    width: 90%; /* Adjust the form width */
+    max-width: 400px; /* Set a max width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: rgba(255, 255, 255, 0.9); /* Form background */
+    border-radius: 10px;
+  }
+
+  .hero-form input,
+  .hero-form select,
+  .hero-form button {
+    font-size: 0.9rem; /* Reduce font size */
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+   .footer {
+    padding: 15px;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .footer-extra-link a {
+    font-size: 0.9rem;
+  }
+}
+  
+
+
+
+
+
+
