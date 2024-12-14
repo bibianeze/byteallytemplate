@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body{
+
+
+}
+
 
 .navbar {
   display: flex;
@@ -13,6 +18,10 @@
   padding: 1rem 2rem;
   background-color: #333;
   color: white;
+    max-width: 1440px;
+  margin: auto;
+
+  
 }
 
 /* Logo */
@@ -57,13 +66,16 @@
 
 .herosec {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: #1D1C20;
   color: white;
   width: 100%;
   padding: 20px;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    max-width: 1440px;
+  margin: auto;
+  /* flex-wrap: wrap; */
 }
 
 .herotext {
@@ -116,6 +128,8 @@
   gap: 1.5rem;
   padding: 60px;
   text-align: center; /* Center text for smaller screens */
+    max-width: 1440px;
+  margin: auto;
 }
 
 .firstsec h2 {
@@ -167,6 +181,8 @@
   gap: 2rem;
   padding: 60px;
   text-align: center; /* Center align for responsiveness */
+    max-width: 1440px;
+  margin: auto;
 }
 
 .secondsection h2 {
@@ -220,6 +236,8 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+    max-width: 1440px;
+  margin: auto;
 }
 
 .thirdsechead {
@@ -303,6 +321,8 @@
   width: 100%;
   gap: 2rem;
   padding: 60px;
+    max-width: 1440px;
+  margin: auto;
 }
 
 .fourthsecbtn {
@@ -388,6 +408,8 @@
   /* position: relative; */
   padding: 0 20px; /* Prevent content from touching the edges */
   background-size: cover;
+    max-width: 1440px;
+  margin: auto;
 }
 .formcontent{
     display: flex;
@@ -513,6 +535,8 @@ text-decoration-skip-ink: none;
   background-color: #1d1c20;
   color: white;
   flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
+    max-width: 1440px;
+  margin: auto;
 }
 
 .footer-logo img {
@@ -553,6 +577,7 @@ text-decoration-skip-ink: none;
 }
 
 /* Responsive Design */
+/* navbar */
 @media (max-width: 508px) {
   .navbar {
     flex-direction: row;
@@ -570,10 +595,11 @@ text-decoration-skip-ink: none;
 }
 /* responsive hero */
 /* For tablets and smaller screens */
-@media (max-width: 768px) {
+
+
+@media  (max-width: 768px) {
   .herosec {
-    flex-direction: column; /* Stack the hero section vertically */
-    text-align: center; /* Center align text and image */
+    text-align: center;  
     padding: 30px;
   }
 
@@ -680,7 +706,7 @@ text-decoration-skip-ink: none;
 
   .thirdsectext {
     align-items: center; /* Center align text */
-    text-align: center; /* Center align for smaller screens */
+    text-align: start; /* Center align for smaller screens */
   }
 
   .tsinnertext h3 {
@@ -780,7 +806,12 @@ text-decoration-skip-ink: none;
 
 
 
+@media (width > 768px){
+.herosec{
+  flex-direction: row;
+}
 
+}
 /* For very small screens (mobile phones) */
 @media (max-width: 480px) {
   .herotext h1 {
